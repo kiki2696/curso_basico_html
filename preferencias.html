@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefencias</title>
+    <link rel="shortcut icon" href="/static/img/rudeus.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rudeus Greyrat</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a class="active" href="preferencias.html">Preferencias</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="margin: 15px;">Preferencias de Rudeus Greyrat</h2>
+    <hr>
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: rgb(207, 207, 207);">
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <th></th>
+            <th>Preferencias </th>
+            <th>No le gusta </th>
+
+            <tr>
+                <td>Comida</td>
+                <td>Guisos Caseros</td>
+                <td>Comidas Picantes</td>
+            </tr>
+            <tr>
+                <td>Habilidades</td>
+                <td>Magia Arcana</td>
+                <td>Magia Oscura</td>
+            </tr>
+            <tr>
+                <td>Aventuras</td>
+                <td>Explorar Ruinas Antiguas</td>
+                <td>Aventuras Monotonas</td>
+            </tr>
+            <tr>
+                <td>Personas</td>
+                <td>Amigos Leales</td>
+                <td>Amigos Falsos</td>
+            </tr>
+            <tr>
+                <td>Intereses</td>
+                <td>Estudiar Libros Antiguos</td>
+                <td>Desperdiciar Tiempo</td>
+            </tr>
+
+        </table>
+    </div>
+
+ 
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>  
+    </footer>
+</body>
+</html>
